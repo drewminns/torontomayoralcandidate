@@ -1,0 +1,6 @@
+
+	<div ng-repeat="item in items | orderByPriority | filter:search | orderBy:'name'">
+	{{item.name}}
+	{{item.description}}
+	<a href="#/item/{{item.$id}}">Link</a>
+	</div>
