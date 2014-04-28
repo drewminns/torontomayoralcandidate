@@ -1,0 +1,28 @@
+[{
+	"firstName" : "Karen",
+	"lastName" : "Stintz",
+	"birthDate" : "1970",
+	"politicalAffiliation" : "Independent (Right-leaning)",
+	"profession" : "Civil Servant, City Councillor",
+	"website" : "http://www.karenstintz.com/",
+	"image" : "http://torontomayoralcandidate.s3.amazonaws.com/profiles/karenstintz.jpg",
+	"views" : [
+		{
+			"Scarborough Subway" : "Build the council-approved and fully funded three-stop subway extension to the Scarborough Subway RT",
+			"Transit Expansion" : "Build a downtown relief line subway. (Says part of the line can be funded through sale of Toronto Hydro; claims the line can be built without a tax increase.)",
+			"Land Transfer Tax" : "Reduce the burden of the land transfer tax by raising the threshold levels at which the escalating rates apply",
+			"Property Taxes" : "Keep property tax increases 'within' the rate of inflation",
+			"Garbage Collection" : "No position yet",
+			"Gardiner Expressway" : "Pursue 'hybrid' proposal to reconfigure the eastern Gardiner Expressway Expressway rather than tear it down or preserve the existing expressway",
+			"Island Airport Jets" : "Support the island airport Transit Expansion if certain conditions are met, won’t comment on Island Airport Jets. (Previously rejected the proposals for Island Airport Jets and runway Transit Expansion.)",
+			"Privatization" : "Sell a majority stake in Toronto Hydro",
+			"Transparency" : "No proposals yet",
+			"City Officials" : "Appoint a single 'czar' to oversee transportation issues",
+			"Events" : "Pursue bid for 2026 World Cup along with cities in the northern U.S. such as Detroit and Chicago",
+			"Red Tape" : "Outsource sports-field-permit process, which she says will make it easier to obtain permits; merge transportation-related departments into one new agency",
+			"Pride" : "Attend the Pride parade",
+			"Ranked Ballots" : "Support the use of ranked ballots in municipal elections",
+			"Children" : "No proposals yet"
+		}
+	]
+}]

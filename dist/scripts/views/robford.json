@@ -1,0 +1,28 @@
+[{
+	"firstName" : "Rob",
+	"lastName" : "Ford",
+	"birthDate" : "May 28, 1969",
+	"politicalAffiliation" : "Progressive Conservative Party of Ontario",
+	"profession" : "Politician",
+	"website" :  "http://www.robfordformayor.ca/",
+	"image" : "http://torontomayoralcandidate.s3.amazonaws.com/profiles/robford.jpg",
+	"views": [
+		{
+			"Scarborough Subway" : "Build the council-approved and fully funded three-stop subway extension to the Scarborough Subway RT",
+			"Transit Expansion" : "Extend the Sheppard Ave. subway rather than build the council-endorsed light rail line, then build a subway on Finch Ave. rather than the council-endorsed light rail line, then build a “downtown relief line” subway. (Has not explained funding plan.)",
+			"Land Transfer Tax" : "Cut the land transfer tax",
+			"Property Taxes" : "No specifics; keep taxes low",
+			"Garbage Collection" : "Outsource garbage collection east of Yonge St., as council did west under his leadership",
+			"Gardiner Expressway" : "Preserve the eastern Gardiner Expressway Expressway rather than tearing it down",
+			"Island Airport Jets" : "Approve the Porter Airlines proposal for Island Airport Jets and an expanded runway at the island airport",
+			"Privatization" : "Support the sale of 10 per cent of Toronto Hydro, no more",
+			"Transparency" : "No proposals yet",
+			"City Officials" : "No proposals yet",
+			"Events" : "Secure a major outdoor music festival like the one he visited in Austin, Texas",
+			"Red Tape" : "No Proposals yet",
+			"Pride" : "Do not attend the Pride parade",
+			"Ranked Ballots" : "Oppose the use of ranked ballots in municipal elections",
+			"Children" : "Oppose the use of ranked ballots in municipal elections"
+		}
+	]
+}]

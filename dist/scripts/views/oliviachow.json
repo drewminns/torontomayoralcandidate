@@ -1,0 +1,28 @@
+[{
+	"firstName" : "Olivia",
+	"lastName" : "Chow",
+	"birthDate" : "March 24, 1957",
+	"politicalAffiliation" : "New Democratic Party of Canada",
+	"profession" : "Politician",
+	"website" : "http://www.oliviachow.ca/",
+	"image" : "http://torontomayoralcandidate.s3.amazonaws.com/profiles/oliviachow.jpg",
+	"views" : [
+		{
+			"Scarborough Subway" : "Cancel the council-approved and fully funded three-stop subway extension to the Scarborough Subway RT, cancel the related tax increase, and build the cheaper and fully-funded seven-stop light rail extension that was originally planned",
+			"Transit Expansion" : "Expand bus service by 10 per cent at rush hour; build a downtown relief line subway. (Has not explained funding plan for relief line.)",
+			"Land Transfer Tax" : "Retain the land transfer tax",
+			"Property Taxes" : "Keep property tax increases 'in line' with or 'around' the rate of inflation; reduce small-business tax rates by 2.5 per cent by 2020",
+			"Garbage Collection" : "Do not proceed immediately with outsourcing garbage collection east of Yonge St.; 'a few years' of analysis required to assess private collection west of Yonge",
+			"Gardiner Expressway" : "Explore 'hybrid' proposal to reconfigure the eastern Gardiner Expressway Expressway rather than tear it down or preserve the existing expressway; says proposal is 'promising'",
+			"Island Airport Jets" : "Reject the Porter Airlines proposal for Island Airport Jets and an expanded runway at the island airport",
+			"Privatization" : "Oppose sale of Toronto Hydro",
+			"Transparency" : "No proposals yet",
+			"City Officials" : "Create program to help immigrant entrepreneurs launch businesses and help existing businesses export",
+			"Events" : "No proposals yet",
+			"Red Tape" : "Allow businesses to obtain licenses online rather than only at single East York office",
+			"Pride" : "Attend the Pride parade",
+			"Ranked Ballots" : "No position yet",
+			"Children" : "Expand after-school recreation and care (ARC) program to cover at least 1,200 more Children"
+		}
+	]
+}]
