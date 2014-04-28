@@ -1,0 +1,129 @@
+*,
+*:before,
+*:after {
+	-moz-border-box: box-sizing;
+	-webkit-border-box: box-sizing;
+	box-sizing: border-box;
+}
+
+@import '_mixins';
+@import '_colours'; // Better Colours
+@import '_grid.scss'; // Better Colours
+
+// Specify the number of columns and set column and gutter widths
+$columns: 12;
+$column-width: 60;
+$gutter-width: 20;
+
+// Remove the definition below for a pixel-based layout
+$total-width: 100%;
+
+/* ---------------------------
+Fonts are located in dist/css/fonts bro
+------------------------------ */
+@include importfont('quicksandbold', 'fonts/quicksand-bold-webfont', 700);
+@include importfont('quicksandregular', 'fonts/quicksand-regular-webfont', 400);
+@include importfont('quicksandlight', 'fonts/quicksand-light-webfont', 300);
+
+// **********************
+// Set Variables Here
+//***********************
+$basefontsize: 16px;
+$baselineheight: 1.5;
+$cap-height: 		0.68;
+$basefontcolour: #333;
+$basefontfamily: 'quicksandregular', "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+$headingsfontfamily: 'quicksandbold', "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+$linkcolour: #0074D9;
+
+body {
+	color: #333;
+	font-size: $basefontsize;
+	font-family: $basefontfamily;
+}
+
+// Headings
+// -------------------------
+h1, h2, h3, h4, h5, h6, p, ul {
+	-webkit-margin-before:0em;
+	-webkit-margin-after:0em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $headingsfontfamily;
+	text-rendering: optimizelegibility; // Fix the character spacing for headings
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+	a {
+		color: $basefontcolour;
+	}
+}
+
+h1 {
+	@include fontbase(32px);
+}
+
+h2 {
+	@include fontbase(28px);
+}
+
+h3 {
+	@include fontbase(24px);
+}
+
+h4 {
+	@include fontbase(21px);
+}
+
+h5 {
+	@include fontbase(18px);
+}
+
+// General Typography
+// -------------------------
+p {
+	@include fontbase(16px);
+}
+
+a {
+	color: $linkcolour;
+	text-decoration: none;
+}
+
+// Lists
+// --------------------------------------------------
+
+// Unordered and Ordered lists
+ul, ol {
+	padding: 0;
+	margin: 0;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+	margin-bottom: 0;
+}
+
+// **********************
+// All Styles Go Below Here Bud
+//***********************
+.container {
+	margin: 0 auto;
+	max-width: 1080px;
+}
+
+#wrapper {
+	padding: 25px;
+	margin: 25px 0px;
+	width: 100%;
+}
+
+
+
+
+
+
+

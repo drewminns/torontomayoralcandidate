@@ -1,0 +1,36 @@
+doctype html
+html(lang='en', ng-app='candidateApp')
+	head
+		include includes/header
+		include includes/dependancies
+	body(ng-controller='candidateCtrl')
+
+		header#top
+			h3 Toronto Mayoral Candidate Helper
+
+		#content
+			#filters
+				h2 What's important to you?
+
+			#candidates
+				.candidates(masonry='{ "transitionDuration" : "0.4s" , "itemSelector" : ".tile"}')
+					.tile(ng-repeat='candidate in candidates | filter:myFilter', masonry-tile )
+						.image(ng-click="showViews=!showViews")
+							img(src="{{candidate.image}}")
+							.name
+								h3 {{candidate.firstName}} {{candidate.lastName}}
+						.info(ng-hide="showViews")
+							h4 Birthdate:
+							p {{candidate.birthDate}}
+							h4 Political Affiliation:
+							p {{candidate.politicalAffiliation}}
+							h4 Profession:
+							p {{candidate.profession}}
+							a(href="{{candidate.website}}") {{candidate.website}}
+							h2 Political Views
+							ul.views(ng-repeat='item in candidate.views')
+								li(ng-repeat='(key, value) in item')
+									dl.item
+										dd {{key}}
+										dd {{value}}
+

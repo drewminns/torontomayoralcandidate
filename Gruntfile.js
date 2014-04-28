@@ -1,7 +1,6 @@
 var path = require('path');
 
-var stylesheetsDir = 'styles/';
-var components = 'app/components';
+var stylesheetsDir = 'dev/styles/';
 
 module.exports = function(grunt) {
 	// Project configuration.
@@ -13,20 +12,19 @@ module.exports = function(grunt) {
 			},
 			scripts: {
 				options: {
-					destPrefix: 'app/scripts/vendor'
+					destPrefix: 'dist/scripts/vendor'
 				},
 				files: {
 					'jquery/jquery.min.js': 'jquery/jquery.min.js',
 					'modernizr/modernizr.js': 'modernizr/modernizr.js',
-					'angular/angular.min.js': 'angular/angular.min.js',
-					'angular-route/angular-route.min.js': 'angular-route/angular-route.min.js'
+					'angular/angular.min.js': 'angular/angular.min.js'
 				}
 			}
 		},
 		jade: {
 			html: {
 				files: {
-					'app/': ['templates/*.jade']
+					'dist/': ['dev/templates/*.jade']
 				},
 				options: {
 					client: false
@@ -37,7 +35,7 @@ module.exports = function(grunt) {
 			server: {
 				options: {
 					port: 9001,
-					base: 'app/'
+					base: 'dist/'
 				}
 			}
 		},
@@ -49,7 +47,7 @@ module.exports = function(grunt) {
 				src: [
 					'javascript/*.js'
 				],
-				dest: 'app/scripts/main.min.js'
+				dest: 'dist/scripts/main.min.js'
 			},
 		},
 		uglify: {
@@ -58,7 +56,7 @@ module.exports = function(grunt) {
 			},
 			js: {
 				files: {
-					'app/scripts/main.min.js': ['app/scripts/main.min.js']
+					'dist/scripts/main.min.js': ['dev/javascript/app.js']
 				}
 			}
 		},
@@ -68,7 +66,15 @@ module.exports = function(grunt) {
 					style: 'expanded'
 				},
 				files: {                         // Dictionary of files
-					'app/css/main.css': stylesheetsDir + 'main.scss'       // 'destination': 'source'
+					'dist/css/main.css': stylesheetsDir + 'main.scss'       // 'destination': 'source'
+				}
+			}
+		},
+		svginject: {
+			all : {
+				options: {},
+				files: {
+					 'dist/scripts/SVGinject.js': ['dist/images/svgs/*.svg'],
 				}
 			}
 		},
@@ -77,26 +83,36 @@ module.exports = function(grunt) {
 				browsers: ['last 5 version', 'ie 7', 'ie 8', 'ie 9']
 			},
 			no_dest: {
-				src: 'app/css/main.css' // globbing is also possible here
+				src: 'dist/css/main.css' // globbing is also possible here
+			}
+		},
+		uncss: {
+			dist: {
+				files: {
+					'dist/css/main.css': ['dist/index.html']
+				}
+			},
+			options: {
+				ignore: ['#ignoredselector', '.ignoredselector']
 			}
 		},
 		watch: {
 			js: {
-				files: ['javascript/*.js'],
+				files: ['dev/javascript/*.js'],
 				tasks: ['concat:js', 'uglify:js'],
 				options: {
 					livereload: true
 				}
 			},
 			css: {
-				files: ['**/*.scss'],
+				files: ['dev/**/*.scss'],
 				tasks: ['sass', 'autoprefixer'],
 				options: {
 					livereload: true
 				}
 			},
 			jade: {
-				files: ['templates/*.jade'],
+				files: ['dev/templates/*.jade'],
 				tasks: ['jade'],
 				options: {
 					livereload: true
@@ -105,14 +121,17 @@ module.exports = function(grunt) {
 		}
 	});
 	grunt.loadNpmTasks('grunt-bowercopy');
+	grunt.loadNpmTasks('grunt-jade');
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-svginject');
 	grunt.loadNpmTasks('grunt-autoprefixer');
-	grunt.loadNpmTasks('grunt-jade');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-uncss');
 	// Run the server and watch for file changes
-	grunt.registerTask('default', ['bowercopy', 'jade', 'connect', 'concat', 'uglify', 'sass', 'autoprefixer', 'watch']);
+	grunt.registerTask('default', ['jade', 'connect',  'concat', 'uglify', 'sass', 'watch']); // Build Tasks
+	grunt.registerTask('clean', ['uncss', 'autoprefixer', ]); // Deploy build tasks
+	grunt.registerTask('inject', ['bowercopy','svginject']); // Inject Bower and SVG tools
 };

@@ -1,0 +1,147 @@
+*,
+*:before,
+*:after {
+  -moz-border-box: box-sizing;
+  -webkit-border-box: box-sizing;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  *zoom: 1;
+}
+body:before, body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+
+/* ---------------------------
+Fonts are located in dist/css/fonts bro
+------------------------------ */
+@font-face {
+  font-family: "quicksandbold";
+  src: url("fonts/quicksand-bold-webfont.eot");
+  src: url("fonts/quicksand-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/quicksand-bold-webfont.woff") format("woff"), url("fonts/quicksand-bold-webfont.ttf") format("truetype"), url("fonts/quicksand-bold-webfont.svg#quicksandbold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "quicksandregular";
+  src: url("fonts/quicksand-regular-webfont.eot");
+  src: url("fonts/quicksand-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/quicksand-regular-webfont.woff") format("woff"), url("fonts/quicksand-regular-webfont.ttf") format("truetype"), url("fonts/quicksand-regular-webfont.svg#quicksandregular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "quicksandlight";
+  src: url("fonts/quicksand-light-webfont.eot");
+  src: url("fonts/quicksand-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/quicksand-light-webfont.woff") format("woff"), url("fonts/quicksand-light-webfont.ttf") format("truetype"), url("fonts/quicksand-light-webfont.svg#quicksandlight") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+body {
+  color: #333;
+  font-size: 16px;
+  font-family: "quicksandregular", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "quicksandbold", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  text-rendering: optimizelegibility;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: #333333;
+}
+
+h1 {
+  font-size: 32px;
+  font-size: calculateRem(32px);
+  line-height: 1.5em;
+  position: relative;
+  top: 0.41em;
+}
+
+h2 {
+  font-size: 28px;
+  font-size: calculateRem(28px);
+  line-height: 1.5em;
+  position: relative;
+  top: 0.41em;
+}
+
+h3 {
+  font-size: 24px;
+  font-size: calculateRem(24px);
+  line-height: 1.5em;
+  position: relative;
+  top: 0.41em;
+}
+
+h4 {
+  font-size: 21px;
+  font-size: calculateRem(21px);
+  line-height: 1.5em;
+  position: relative;
+  top: 0.41em;
+}
+
+h5 {
+  font-size: 18px;
+  font-size: calculateRem(18px);
+  line-height: 1.5em;
+  position: relative;
+  top: 0.41em;
+}
+
+p {
+  font-size: 16px;
+  font-size: calculateRem(16px);
+  line-height: 1.5em;
+  position: relative;
+  top: 0.41em;
+}
+
+a {
+  color: #0074d9;
+  text-decoration: none;
+}
+
+ul, ol {
+  padding: 0;
+  margin: 0;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
+#wrapper {
+  padding: 25px;
+  margin: 25px 0px;
+  width: 100%;
+}

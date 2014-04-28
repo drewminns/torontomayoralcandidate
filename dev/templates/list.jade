@@ -1,0 +1,20 @@
+ul.candidates
+	li(ng-repeat='candidate in candidates | filter:myFilter' )
+		.image(ng-click="seeViews=!seeViews")
+			img(src="{{candidate.image}}")
+			.name
+				h3 {{candidate.firstName}} {{candidate.lastName}}
+		div(ng-show="seeViews")
+			h4 Birthdate:
+			p {{candidate.birthDate}}
+			h4 Political Affiliation:
+			p {{candidate.politicalAffiliation}}
+			h4 Profession:
+			p {{candidate.profession}}
+			a(href="{{candidate.website}}") {{candidate.website}}
+			h2 Political Views
+			ul.views
+				li(ng-repeat='item in candidate.views')
+					dl.item(ng-repeat='(key, value) in item')
+						dd {{key}}
+						dd {{value}}
