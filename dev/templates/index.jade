@@ -14,7 +14,7 @@ html(lang='en', ng-app='candidateApp')
 			#candidates
 				.candidates(masonry='{ "transitionDuration" : "0.4s" , "itemSelector" : ".tile"}')
 					.tile(ng-repeat='candidate in candidates | filter:myFilter', masonry-tile )
-							//- img(src="{{candidate.image}}")
+							img(src="{{candidate.image}}")
 							.name
 								h3 {{candidate.firstName}} {{candidate.lastName}}
 							.info
@@ -32,5 +32,6 @@ html(lang='en', ng-app='candidateApp')
 											dd {{key}}
 											dd.policy(ng-repeat='each in value')
 												{{each.policy}}
-												.hello(ng-show='each.support') hello
+												.hello(ng-show='!each.support')
+													span.svg-checkmark
 

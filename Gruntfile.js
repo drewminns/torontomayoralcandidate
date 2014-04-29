@@ -17,7 +17,9 @@ module.exports = function(grunt) {
 				files: {
 					'jquery/jquery.min.js': 'jquery/jquery.min.js',
 					'modernizr/modernizr.js': 'modernizr/modernizr.js',
-					'angular/angular.min.js': 'angular/angular.min.js'
+					'angular/angular.min.js': 'angular/angular.min.js',
+					'angular-route/angular-route.min.js': 'angular-route/angular-route.min.js',
+					'angular-loading-bar/loading-bar.js': 'angular-loading-bar/src/loading-bar.js'
 				}
 			}
 		},
@@ -74,7 +76,7 @@ module.exports = function(grunt) {
 			all : {
 				options: {},
 				files: {
-					 'dist/scripts/SVGinject.js': ['dist/images/svgs/*.svg'],
+					 'dist/scripts/svginject.js': ['dist/css/svg/*.svg'],
 				}
 			}
 		},
@@ -112,7 +114,7 @@ module.exports = function(grunt) {
 				}
 			},
 			jade: {
-				files: ['dev/templates/*.jade'],
+				files: ['dev/templates/*.jade', 'dev/templates/includes/*.jade'],
 				tasks: ['jade'],
 				options: {
 					livereload: true

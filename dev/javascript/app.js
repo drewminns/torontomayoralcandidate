@@ -1,9 +1,17 @@
 'use strict';
 
-var candidateApp = angular.module('candidateApp', ['masonry']);
+var candidateApp = angular.module('candidateApp', ['chieffancypants.loadingBar']);
 
-candidateApp.controller('candidateCtrl', function($scope, $http) {
-	$http.get('scripts/positions.json').success(function(data) {
-		$scope.candidates = data.results;
+candidateApp.factory('candidateFactory', function($http) {
+	return {
+		getCandidatesAsync: function(callback) {
+			$http.get('scripts/positions.json').success(callback);
+		}
+	}
+});
+
+candidateApp.controller('candidateCtrl', function($scope, candidateFactory) {
+	candidateFactory.getCandidatesAsync(function(results){
+		$scope.candidates = results.results;
 	});
 });
