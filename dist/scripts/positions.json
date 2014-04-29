@@ -12,7 +12,7 @@
                 {
                     "Events": [
                         {
-                            "support": false,
+                            "support": true,
                             "policy": "No proposals yet"
                         }
                     ],
