@@ -45,7 +45,7 @@
 						},
 						"officials" : {
 								"name": "City Officials",
-								"support": false,
+								"support": true,
 								"policy": "Create program to help immigrant entrepreneurs launch businesses and help existing businesses export"
 						},
 						"transparency" : {
@@ -65,22 +65,22 @@
 						},
 						"pride" : {
 								"name": "Pride",
-								"support": false,
+								"support": true,
 								"policy": "Attend the pride parade"
 						},
 						"islandAirport" : {
 								"name": "Island Airport",
 								"support": false,
-								"policy": "Reject the Porter Airlines proposal for islandAirport and an expanded runway at the island airport"
+								"policy": "Reject the Porter Airlines proposal for island airport and an expanded runway at the island airport"
 						},
 						"propertyTax" : {
 								"name": "Property Taxes",
-								"support": false,
+								"support": true,
 								"policy": "Keep property tax increases 'in line' with or 'around' the rate of inflation; reduce small-business tax rates by 2.5 per cent by 2020"
 						},
 						"redTape" : {
 								"name": "Red Tape",
-								"support": false,
+								"support": true,
 								"policy": "Allow businesses to obtain licenses online rather than only at single East York office"
 						},
 					"image": "http://torontomayoralcandidate.s3.amazonaws.com/profiles/oliviachow.jpg",
@@ -100,33 +100,33 @@
 					},
 					"rankedBallots" : {
 							"name": "Ranked Ballots",
-							"support": true,
-							"policy": "Oppose the use of rankedBallots in municipal elections"
+							"support": false,
+							"policy": "Oppose the use of ranked ballots in municipal elections"
 					},
 					"transitExpansion" : {
 							"name": "Transit Expansion",
-							"support": false,
+							"support": true,
 							"policy": "Extend the Sheppard Ave. subway rather than build the council-endorsed light rail line, then build a subway on Finch Ave. rather than the council-endorsed light rail line, then build a “downtown relief line” subway. (Has not explained funding plan.)"
 					},
 					"garbageCollection" : {
 							"name": "Garbage Collection",
-							"support": false,
+							"support": true,
 							"policy": "Outsource garbageCollection east of Yonge St., as council did west under his leadership"
 					},
 					"privatization" : {
 							"name": "Privatization",
-							"support": false,
+							"support": true,
 							"policy": "Support the sale of 10 per cent of Toronto Hydro, no more"
 					},
 					"landTransferTax" : {
 							"name": "Land Transfer Tax",
-							"support": false,
-							"policy": "Cut the landTransferTax"
+							"support": true,
+							"policy": "Cut the Land Transfer Tax"
 					},
 					"gardinerExpressway" : {
 							"name": "Gardiner Expressway",
 							"support": false,
-							"policy": "Preserve the eastern gardinerExpressway Expressway rather than tearing it down"
+							"policy": "Preserve the eastern Gardiner Expressway rather than tearing it down"
 					},
 					"officials" : {
 							"name": "City Officials",
@@ -145,7 +145,7 @@
 					},
 					"scarborough" : {
 							"name": "Scarborough Subway",
-							"support": false,
+							"support": true,
 							"policy": "Build the council-approved and fully funded three-stop subway extension to the scarborough RT"
 					},
 					"pride" : {
@@ -154,8 +154,8 @@
 							"policy": "Do not attend the pride parade"
 					},
 					"islandAirport" : {
-							"name": "Island Airport",
-							"support": false,
+							"name": "Island Airport Expansion",
+							"support": true,
 							"policy": "Approve the Porter Airlines proposal for islandAirport and an expanded runway at the island airport"
 					},
 					"propertyTax" : {
@@ -186,17 +186,17 @@
 						"rankedBallots" : {
 								"name": "Ranked Ballots",
 								"support": true,
-								"policy": "Support the use of rankedBallots in municipal elections"
+								"policy": "Support the use of ranked ballots in municipal elections"
 						},
 						"transitExpansion" : {
 								"name": "Transit Expansion",
-								"support": false,
+								"support": true,
 								"policy": "Devote money saved by the subway cancellation to the downtown relief line subway, which he calls the 'commuter relief line,' and other scarborough projects. (Has not explained funding plan.)"
 						},
 						"garbageCollection" : {
 								"name": "Garbage Collection",
-								"support": false,
-								"policy": "Outsource garbageCollection in half of the territory east of Yonge St., have city employees continue to collect in the other half"
+								"support": true,
+								"policy": "Outsource garbage collection in half of the territory east of Yonge St., have city employees continue to collect in the other half"
 						},
 						"privatization" : {
 								"name": "Privatization",
@@ -215,12 +215,12 @@
 						},
 						"officials" : {
 								"name": "City Officials",
-								"support": false,
+								"support": true,
 								"policy": "Hire a veteran of the construction industry as a policy advisor on infrastructure, road repairs and scarborough construction; copy San Francisco’s 'entrepreneur-in-residence' program; match eight technology startups per year with city departments to solve specific problems"
 						},
 						"transparency" : {
 								"name": "Transparency",
-								"support": false,
+								"support": true,
 								"policy": "Release full schedule of public events, voluntarily report any absences from work; 'lead the world in data transparency' by releasing more government data sets than any other city by 2018"
 						},
 						"children" : {
@@ -235,22 +235,22 @@
 						},
 						"pride" : {
 								"name": "Pride",
-								"support": false,
+								"support": true,
 								"policy": "Attend the pride parade"
 						},
 						"islandAirport" : {
 								"name": "Island Airport",
-								"support": false,
+								"support": true,
 								"policy": "Support the Porter Airlines proposal if certain conditions are met"
 						},
 						"propertyTax" : {
 								"name": "Property Taxes",
-								"support": false,
+								"support": true,
 								"policy": "Continue reducing apartment and commercial tax rates past the scheduled 2015 end date for the reductions; proceed until rates are 'competitive'"
 						},
 						"redTape" : {
 								"name": "Red Tape",
-								"support": false,
+								"support": true,
 								"policy": "Improve business licensing system: allow businesses to pay fee after one year rather than at registration; eliminate 'obsolete or unnecessary' license categories; allow businesses to register online and at additional locations rather than only at single East York office"
 						},
 						"image": "http://torontomayoralcandidate.s3.amazonaws.com/profiles/davidsoknacki.jpg",
@@ -265,17 +265,17 @@
 						"politicalAffiliation": "Independent (Right-leaning)",
 						"events" : {
 								"name": "Events",
-								"support": false,
+								"support": true,
 								"policy": "Pursue bid for 2026 World Cup along with cities in the northern U.S. such as Detroit and Chicago"
 						},
 						"rankedBallots" : {
 								"name": "Ranked Ballots",
-								"support": false,
-								"policy": "Support the use of rankedBallots in municipal elections"
+								"support": true,
+								"policy": "Support the use of ranked ballots in municipal elections"
 						},
 						"transitExpansion" : {
 								"name": "Transit Expansion",
-								"support": false,
+								"support": true,
 								"policy": "Build a downtown relief line subway. (Says part of the line can be funded through sale of Toronto Hydro; claims the line can be built without a tax increase.)"
 						},
 						"garbageCollection" : {
@@ -285,22 +285,22 @@
 						},
 						"privatization" : {
 								"name": "Privatization",
-								"support": false,
+								"support": true,
 								"policy": "Sell a majority stake in Toronto Hydro"
 						},
 						"landTransferTax" : {
 								"name": "Land Transfer Tax",
 								"support": false,
-								"policy": "Reduce the burden of the landTransferTax by raising the threshold levels at which the escalating rates apply"
+								"policy": "Reduce the burden of the land transfer tax by raising the threshold levels at which the escalating rates apply"
 						},
 						"gardinerExpressway" : {
 								"name": "Gardiner Expressway",
 								"support": false,
-								"policy": "Pursue 'hybrid' proposal to reconfigure the eastern gardinerExpressway Expressway rather than tear it down or preserve the existing expressway"
+								"policy": "Pursue 'hybrid' proposal to reconfigure the eastern Gardiner Expressway rather than tear it down or preserve the existing expressway"
 						},
 						"officials" : {
 								"name": "City Officials",
-								"support": false,
+								"support": true,
 								"policy": "Appoint a single 'czar' to oversee transportation issues"
 						},
 						"transparency" : {
@@ -315,27 +315,27 @@
 						},
 						"scarborough" : {
 								"name": "Scarborough Subway",
-								"support": false,
+								"support": true,
 								"policy": "Build the council-approved and fully funded three-stop subway extension to the scarborough RT"
 						},
 						"pride" : {
 								"name": "Pride",
-								"support": false,
+								"support": true,
 								"policy": "Attend the pride parade"
 						},
 						"islandAirport" : {
 								"name": "Island Airport",
-								"support": false,
-								"policy": "Support the island airport transitExpansion if certain conditions are met, won’t comment on islandAirport. (Previously rejected the proposals for islandAirport and runway transitExpansion.)"
+								"support": true,
+								"policy": "Support the island airport expansion if certain conditions are met, won’t comment on island airport. (Previously rejected the proposals for island airport and runway expansion.)"
 						},
 						"propertyTax" : {
 								"name": "Property Taxes",
-								"support": false,
+								"support": true,
 								"policy": "Keep property tax increases 'within' the rate of inflation"
 						},
 						"redTape" : {
 								"name": "Red Tape",
-								"support": false,
+								"support": true,
 								"policy": "Outsource sports-field-permit process, which she says will make it easier to obtain permits; merge transportation-related departments into one new agency"
 						},
 						"image": "http://torontomayoralcandidate.s3.amazonaws.com/profiles/karenstintz.jpg",
@@ -360,13 +360,13 @@
 						},
 						"transitExpansion" : {
 								"name": "Transit Expansion",
-								"support": false,
+								"support": true,
 								"policy": "Build a downtown relief line subway, which he calls the 'Yonge St. relief line.' (Has not explained funding plan.)"
 						},
 						"garbageCollection" : {
 								"name": "Garbage Collection",
-								"support": false,
-								"policy": "Outsource garbageCollection east of Yonge St."
+								"support": true,
+								"policy": "Outsource garbage collection east of Yonge St."
 						},
 						"privatization" : {
 								"name": "Privatization",
@@ -390,7 +390,7 @@
 						},
 						"transparency" : {
 								"name": "Transparency",
-								"support": false,
+								"support": true,
 								"policy": "Make schedule public, hold media availabilities at least weekly"
 						},
 						"children" : {
@@ -400,12 +400,12 @@
 						},
 						"scarborough" : {
 								"name": "Scarborough Subway",
-								"support": false,
+								"support": true,
 								"policy": "Build the council-approved and fully funded three-stop subway extension to the scarborough RT"
 						},
 						"pride" : {
 								"name": "Pride",
-								"support": false,
+								"support": true,
 								"policy": "Attend the pride parade"
 						},
 						"islandAirport" : {
@@ -415,8 +415,8 @@
 						},
 						"propertyTax" : {
 								"name": "Property Taxes",
-								"support": false,
-								"policy": "Keep propertyTax increases at or below the rate of inflation"
+								"support": true,
+								"policy": "Keep property tax increases at or below the rate of inflation"
 						},
 						"redTape" : {
 								"name": "Red Tape",
