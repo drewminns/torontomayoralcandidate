@@ -11,21 +11,7 @@ candidateApp.factory('candidateFactory', function($http) {
 });
 
 candidateApp.controller('candidateCtrl', function($scope, candidateFactory) {
-
 	candidateFactory.getCandidatesAsync(function(candidates){
 		$scope.candidates = candidates.results;
-		$scope.views = [];
-
-		$.each(candidates.results, function(index, element){
-			var view = element;
-			$.each(this.views, function(index, element){
-				var policy = element.name;
-				console.log(policy);
-			});
-		});
-
 	});
 });
-
-// $scope.views.push(policy);
-// 				console.log(policy);

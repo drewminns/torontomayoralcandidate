@@ -8,170 +8,166 @@
 						"lastName": "Chow",
 						"birthDate": "1957-03-24",
 						"politicalAffiliation": "New Democratic Party of Canada",
-						"views": [
-								{
-										"name": "Events",
-										"support": false,
-										"policy": "No proposals yet"
-								},
-								{
-										"name": "Ranked Ballots",
-										"support": false,
-										"policy": "No position yet"
-								},
-								{
-										"name": "Transit Expansion",
-										"support": true,
-										"policy": "Expand bus service by 10 per cent at rush hour; build a downtown relief line subway. (Has not explained funding plan for relief line.)"
-								},
-								{
-										"name": "Garbage Collection",
-										"support": false,
-										"policy": "Do not proceed immediately with outsourcing garbageCollection east of Yonge St.; 'a few years' of analysis required to assess private collection west of Yonge"
-								},
-								{
-										"name": "Privatization",
-										"support": false,
-										"policy": "Oppose sale of Toronto Hydro"
-								},
-								{
-										"name": "Land Transfer Tax",
-										"support": false,
-										"policy": "Retain the Land Transfer Tax"
-								},
-								{
-										"name": "Gardiner Expressway",
-										"support": true,
-										"policy": "Explore 'hybrid' proposal to reconfigure the eastern gardinerExpressway Expressway rather than tear it down or preserve the existing expressway; says proposal is 'promising'"
-								},
-								{
-										"name": "City Officials",
-										"support": false,
-										"policy": "Create program to help immigrant entrepreneurs launch businesses and help existing businesses export"
-								},
-								{
-										"name": "Transparency",
-										"support": false,
-										"policy": "No proposals yet"
-								},
-								{
-										"name": "Children",
-										"support": false,
-										"policy": "Expand after-school recreation and care (ARC) program to cover at least 1,200 more children"
-								},
-								{
-										"name": "Scarborough Subway",
-										"support": false,
-										"policy": "Cancel the council-approved and fully funded three-stop subway extension to the scarborough RT, cancel the related tax increase, and build the cheaper and fully-funded seven-stop light rail extension that was originally planned"
-								},
-								{
-										"name": "Pride",
-										"support": false,
-										"policy": "Attend the pride parade"
-								},
-								{
-										"name": "Island Airport",
-										"support": false,
-										"policy": "Reject the Porter Airlines proposal for islandAirport and an expanded runway at the island airport"
-								},
-								{
-										"name": "Property Taxes",
-										"support": false,
-										"policy": "Keep property tax increases 'in line' with or 'around' the rate of inflation; reduce small-business tax rates by 2.5 per cent by 2020"
-								},
-								{
-										"name": "Red Tape",
-										"support": false,
-										"policy": "Allow businesses to obtain licenses online rather than only at single East York office"
-								}
-						],
-						"image": "http://torontomayoralcandidate.s3.amazonaws.com/profiles/oliviachow.jpg",
-						"url": "http://torontomayor.digbymarksit.com/candidates/2/",
-						"profession": "Politician",
-						"website": "http://www.oliviachow.ca/"
-				},
-				{
-						"firstName": "Rob",
-						"lastName": "Ford",
-						"birthDate": "1969-05-28",
-						"politicalAffiliation": "Progressive Conservative Party of Ontario",
-						"views": [
-								{
-										"name": "Events",
-										"support": false,
-										"policy": "Secure a major outdoor music festival like the one he visited in Austin, Texas"
-								},
-								{
-										"name": "Ranked Ballots",
-										"support": false,
-										"policy": "Oppose the use of rankedBallots in municipal elections"
-								},
-								{
-										"name": "Transit Expansion",
-										"support": false,
-										"policy": "Extend the Sheppard Ave. subway rather than build the council-endorsed light rail line, then build a subway on Finch Ave. rather than the council-endorsed light rail line, then build a “downtown relief line” subway. (Has not explained funding plan.)"
-								},
-								{
-										"name": "Garbage Collection",
-										"support": false,
-										"policy": "Outsource garbageCollection east of Yonge St., as council did west under his leadership"
-								},
-								{
-										"name": "Privatization",
-										"support": false,
-										"policy": "Support the sale of 10 per cent of Toronto Hydro, no more"
-								},
-								{
-										"name": "Land Transfer Tax",
-										"support": false,
-										"policy": "Cut the landTransferTax"
-								},
-								{
-										"name": "Gardiner Expressway",
-										"support": false,
-										"policy": "Preserve the eastern gardinerExpressway Expressway rather than tearing it down"
-								},
-								{
-										"name": "City Officials",
-										"support": false,
-										"policy": "No proposals yet"
-								},
-								{
-										"name": "Transparency",
-										"support": false,
-										"policy": "No proposals yet"
-								},
-								{
-										"name": "Children",
-										"support": false,
-										"policy": "Oppose the use of rankedBallots in municipal elections"
-								},
-								{
-										"name": "Scarborough Subway",
-										"support": false,
-										"policy": "Build the council-approved and fully funded three-stop subway extension to the scarborough RT"
-								},
-								{
-										"name": "Pride",
-										"support": false,
-										"policy": "Do not attend the pride parade"
-								},
-								{
-										"name": "Island Airport",
-										"support": false,
-										"policy": "Approve the Porter Airlines proposal for islandAirport and an expanded runway at the island airport"
-								},
-								{
-										"name": "Property Taxes",
-										"support": false,
-										"policy": "No specifics; keep taxes low"
-								},
-								{
-										"name": "Red Tape",
-										"support": false,
-										"policy": "No Proposals yet"
-								}
-						],
+						"events": {
+								"name": "Events",
+								"support": false,
+								"policy": "No proposals yet"
+						},
+						"rankedBallots" : {
+								"name": "Ranked Ballots",
+								"support": false,
+								"policy": "No position yet"
+						},
+						"transitExpansion" : {
+								"name": "Transit Expansion",
+								"support": true,
+								"policy": "Expand bus service by 10 per cent at rush hour; build a downtown relief line subway. (Has not explained funding plan for relief line.)"
+						},
+						"garbageCollection" : {
+								"name": "Garbage Collection",
+								"support": false,
+								"policy": "Do not proceed immediately with outsourcing garbageCollection east of Yonge St.; 'a few years' of analysis required to assess private collection west of Yonge"
+						},
+						"privatization" : {
+								"name": "Privatization",
+								"support": false,
+								"policy": "Oppose sale of Toronto Hydro"
+						},
+						"landTransferTax" : {
+								"name": "Land Transfer Tax",
+								"support": false,
+								"policy": "Retain the Land Transfer Tax"
+						},
+						"gardinerExpressway" : {
+								"name": "Gardiner Expressway",
+								"support": true,
+								"policy": "Explore 'hybrid' proposal to reconfigure the eastern gardinerExpressway Expressway rather than tear it down or preserve the existing expressway; says proposal is 'promising'"
+						},
+						"officials" : {
+								"name": "City Officials",
+								"support": false,
+								"policy": "Create program to help immigrant entrepreneurs launch businesses and help existing businesses export"
+						},
+						"transparency" : {
+								"name": "Transparency",
+								"support": false,
+								"policy": "No proposals yet"
+						},
+						"children" : {
+								"name": "Children",
+								"support": false,
+								"policy": "Expand after-school recreation and care (ARC) program to cover at least 1,200 more children"
+						},
+						"scarborough" : {
+								"name": "Scarborough Subway",
+								"support": false,
+								"policy": "Cancel the council-approved and fully funded three-stop subway extension to the scarborough RT, cancel the related tax increase, and build the cheaper and fully-funded seven-stop light rail extension that was originally planned"
+						},
+						"pride" : {
+								"name": "Pride",
+								"support": false,
+								"policy": "Attend the pride parade"
+						},
+						"islandAirport" : {
+								"name": "Island Airport",
+								"support": false,
+								"policy": "Reject the Porter Airlines proposal for islandAirport and an expanded runway at the island airport"
+						},
+						"propertyTax" : {
+								"name": "Property Taxes",
+								"support": false,
+								"policy": "Keep property tax increases 'in line' with or 'around' the rate of inflation; reduce small-business tax rates by 2.5 per cent by 2020"
+						},
+						"redTape" : {
+								"name": "Red Tape",
+								"support": false,
+								"policy": "Allow businesses to obtain licenses online rather than only at single East York office"
+						},
+					"image": "http://torontomayoralcandidate.s3.amazonaws.com/profiles/oliviachow.jpg",
+					"url": "http://torontomayor.digbymarksit.com/candidates/2/",
+					"profession": "Politician",
+					"website": "http://www.oliviachow.ca/"
+			},
+			{
+					"firstName": "Rob",
+					"lastName": "Ford",
+					"birthDate": "1969-05-28",
+					"politicalAffiliation": "Progressive Conservative Party of Ontario",
+					"events" : {
+							"name": "Events",
+							"support": true,
+							"policy": "Secure a major outdoor music festival like the one he visited in Austin, Texas"
+					},
+					"rankedBallots" : {
+							"name": "Ranked Ballots",
+							"support": true,
+							"policy": "Oppose the use of rankedBallots in municipal elections"
+					},
+					"transitExpansion" : {
+							"name": "Transit Expansion",
+							"support": false,
+							"policy": "Extend the Sheppard Ave. subway rather than build the council-endorsed light rail line, then build a subway on Finch Ave. rather than the council-endorsed light rail line, then build a “downtown relief line” subway. (Has not explained funding plan.)"
+					},
+					"garbageCollection" : {
+							"name": "Garbage Collection",
+							"support": false,
+							"policy": "Outsource garbageCollection east of Yonge St., as council did west under his leadership"
+					},
+					"privatization" : {
+							"name": "Privatization",
+							"support": false,
+							"policy": "Support the sale of 10 per cent of Toronto Hydro, no more"
+					},
+					"landTransferTax" : {
+							"name": "Land Transfer Tax",
+							"support": false,
+							"policy": "Cut the landTransferTax"
+					},
+					"gardinerExpressway" : {
+							"name": "Gardiner Expressway",
+							"support": false,
+							"policy": "Preserve the eastern gardinerExpressway Expressway rather than tearing it down"
+					},
+					"officials" : {
+							"name": "City Officials",
+							"support": false,
+							"policy": "No proposals yet"
+					},
+					"transparency" : {
+							"name": "Transparency",
+							"support": false,
+							"policy": "No proposals yet"
+					},
+					"children" : {
+							"name": "Children",
+							"support": false,
+							"policy": "Oppose the use of rankedBallots in municipal elections"
+					},
+					"scarborough" : {
+							"name": "Scarborough Subway",
+							"support": false,
+							"policy": "Build the council-approved and fully funded three-stop subway extension to the scarborough RT"
+					},
+					"pride" : {
+							"name": "Pride",
+							"support": false,
+							"policy": "Do not attend the pride parade"
+					},
+					"islandAirport" : {
+							"name": "Island Airport",
+							"support": false,
+							"policy": "Approve the Porter Airlines proposal for islandAirport and an expanded runway at the island airport"
+					},
+					"propertyTax" : {
+							"name": "Property Taxes",
+							"support": false,
+							"policy": "No specifics; keep taxes low"
+					},
+					"redTape" : {
+							"name": "Red Tape",
+							"support": false,
+							"policy": "No Proposals yet"
+					},
 						"image": "http://torontomayoralcandidate.s3.amazonaws.com/profiles/robford.jpg",
 						"url": "http://torontomayor.digbymarksit.com/candidates/1/",
 						"profession": "Politician",
@@ -182,83 +178,81 @@
 						"lastName": "Soknacki",
 						"birthDate": null,
 						"politicalAffiliation": "Independent (Right-leaning)",
-						"views": [
-								{
-										"name": "Events",
-										"support": false,
-										"policy": "No proposals yet"
-								},
-								{
-										"name": "Ranked Ballots",
-										"support": false,
-										"policy": "Support the use of rankedBallots in municipal elections"
-								},
-								{
-										"name": "Transit Expansion",
-										"support": false,
-										"policy": "Devote money saved by the subway cancellation to the downtown relief line subway, which he calls the 'commuter relief line,' and other scarborough projects. (Has not explained funding plan.)"
-								},
-								{
-										"name": "Garbage Collection",
-										"support": false,
-										"policy": "Outsource garbageCollection in half of the territory east of Yonge St., have city employees continue to collect in the other half"
-								},
-								{
-										"name": "Privatization",
-										"support": false,
-										"policy": "Says Hydro lease would not be good idea but supported partial sale while on council and calls it a 'fair idea'; no other position/proposals yet"
-								},
-								{
-										"name": "Land Transfer Tax",
-										"support": false,
-										"policy": "Reform the landTransferTax by indexing the tax brackets to inflation in housing prices, thereby reducing the tax burden if prices continue to rise"
-								},
-								{
-										"name": "Gardiner Expressway",
-										"support": false,
-										"policy": "No position yet"
-								},
-								{
-										"name": "City Officials",
-										"support": false,
-										"policy": "Hire a veteran of the construction industry as a policy advisor on infrastructure, road repairs and scarborough construction; copy San Francisco’s 'entrepreneur-in-residence' program; match eight technology startups per year with city departments to solve specific problems"
-								},
-								{
-										"name": "Transparency",
-										"support": false,
-										"policy": "Release full schedule of public events, voluntarily report any absences from work; 'lead the world in data transparency' by releasing more government data sets than any other city by 2018"
-								},
-								{
-										"name": "Children",
-										"support": false,
-										"policy": "No proposals yet"
-								},
-								{
-										"name": "Scarborough Subway",
-										"support": false,
-										"policy": "Cancel the council-approved and fully funded three-stop subway extension to the scarborough RT, cancel the related tax increase, and build the cheaper and fully-funded seven-stop light rail extension that was originally planned"
-								},
-								{
-										"name": "Pride",
-										"support": false,
-										"policy": "Attend the pride parade"
-								},
-								{
-										"name": "Island Airport",
-										"support": false,
-										"policy": "Support the Porter Airlines proposal if certain conditions are met"
-								},
-								{
-										"name": "Property Taxes",
-										"support": false,
-										"policy": "Continue reducing apartment and commercial tax rates past the scheduled 2015 end date for the reductions; proceed until rates are 'competitive'"
-								},
-								{
-										"name": "Red Tape",
-										"support": false,
-										"policy": "Improve business licensing system: allow businesses to pay fee after one year rather than at registration; eliminate 'obsolete or unnecessary' license categories; allow businesses to register online and at additional locations rather than only at single East York office"
-								}
-						],
+						"events" : {
+								"name": "Events",
+								"support": false,
+								"policy": "No proposals yet"
+						},
+						"rankedBallots" : {
+								"name": "Ranked Ballots",
+								"support": true,
+								"policy": "Support the use of rankedBallots in municipal elections"
+						},
+						"transitExpansion" : {
+								"name": "Transit Expansion",
+								"support": false,
+								"policy": "Devote money saved by the subway cancellation to the downtown relief line subway, which he calls the 'commuter relief line,' and other scarborough projects. (Has not explained funding plan.)"
+						},
+						"garbageCollection" : {
+								"name": "Garbage Collection",
+								"support": false,
+								"policy": "Outsource garbageCollection in half of the territory east of Yonge St., have city employees continue to collect in the other half"
+						},
+						"privatization" : {
+								"name": "Privatization",
+								"support": false,
+								"policy": "Says Hydro lease would not be good idea but supported partial sale while on council and calls it a 'fair idea'; no other position/proposals yet"
+						},
+						"landTransferTax" : {
+								"name": "Land Transfer Tax",
+								"support": false,
+								"policy": "Reform the landTransferTax by indexing the tax brackets to inflation in housing prices, thereby reducing the tax burden if prices continue to rise"
+						},
+						"gardinerExpressway" : {
+								"name": "Gardiner Expressway",
+								"support": false,
+								"policy": "No position yet"
+						},
+						"officials" : {
+								"name": "City Officials",
+								"support": false,
+								"policy": "Hire a veteran of the construction industry as a policy advisor on infrastructure, road repairs and scarborough construction; copy San Francisco’s 'entrepreneur-in-residence' program; match eight technology startups per year with city departments to solve specific problems"
+						},
+						"transparency" : {
+								"name": "Transparency",
+								"support": false,
+								"policy": "Release full schedule of public events, voluntarily report any absences from work; 'lead the world in data transparency' by releasing more government data sets than any other city by 2018"
+						},
+						"children" : {
+								"name": "Children",
+								"support": false,
+								"policy": "No proposals yet"
+						},
+						"scarborough" : {
+								"name": "Scarborough Subway",
+								"support": false,
+								"policy": "Cancel the council-approved and fully funded three-stop subway extension to the scarborough RT, cancel the related tax increase, and build the cheaper and fully-funded seven-stop light rail extension that was originally planned"
+						},
+						"pride" : {
+								"name": "Pride",
+								"support": false,
+								"policy": "Attend the pride parade"
+						},
+						"islandAirport" : {
+								"name": "Island Airport",
+								"support": false,
+								"policy": "Support the Porter Airlines proposal if certain conditions are met"
+						},
+						"propertyTax" : {
+								"name": "Property Taxes",
+								"support": false,
+								"policy": "Continue reducing apartment and commercial tax rates past the scheduled 2015 end date for the reductions; proceed until rates are 'competitive'"
+						},
+						"redTape" : {
+								"name": "Red Tape",
+								"support": false,
+								"policy": "Improve business licensing system: allow businesses to pay fee after one year rather than at registration; eliminate 'obsolete or unnecessary' license categories; allow businesses to register online and at additional locations rather than only at single East York office"
+						},
 						"image": "http://torontomayoralcandidate.s3.amazonaws.com/profiles/davidsoknacki.jpg",
 						"url": "http://torontomayor.digbymarksit.com/candidates/5/",
 						"profession": "Business Owner, Former City Councillor",
@@ -269,83 +263,81 @@
 						"lastName": "Stintz",
 						"birthDate": null,
 						"politicalAffiliation": "Independent (Right-leaning)",
-						"views": [
-								{
-										"name": "Events",
-										"support": false,
-										"policy": "Pursue bid for 2026 World Cup along with cities in the northern U.S. such as Detroit and Chicago"
-								},
-								{
-										"name": "Ranked Ballots",
-										"support": false,
-										"policy": "Support the use of rankedBallots in municipal elections"
-								},
-								{
-										"name": "Transit Expansion",
-										"support": false,
-										"policy": "Build a downtown relief line subway. (Says part of the line can be funded through sale of Toronto Hydro; claims the line can be built without a tax increase.)"
-								},
-								{
-										"name": "Garbage Collection",
-										"support": false,
-										"policy": "No position yet"
-								},
-								{
-										"name": "Privatization",
-										"support": false,
-										"policy": "Sell a majority stake in Toronto Hydro"
-								},
-								{
-										"name": "Land Transfer Tax",
-										"support": false,
-										"policy": "Reduce the burden of the landTransferTax by raising the threshold levels at which the escalating rates apply"
-								},
-								{
-										"name": "Gardiner Expressway",
-										"support": false,
-										"policy": "Pursue 'hybrid' proposal to reconfigure the eastern gardinerExpressway Expressway rather than tear it down or preserve the existing expressway"
-								},
-								{
-										"name": "City Officials",
-										"support": false,
-										"policy": "Appoint a single 'czar' to oversee transportation issues"
-								},
-								{
-										"name": "Transparency",
-										"support": false,
-										"policy": "No proposals yet"
-								},
-								{
-										"name": "Children",
-										"support": false,
-										"policy": "No proposals yet"
-								},
-								{
-										"name": "Scarborough Subway",
-										"support": false,
-										"policy": "Build the council-approved and fully funded three-stop subway extension to the scarborough RT"
-								},
-								{
-										"name": "Pride",
-										"support": false,
-										"policy": "Attend the pride parade"
-								},
-								{
-										"name": "Island Airport",
-										"support": false,
-										"policy": "Support the island airport transitExpansion if certain conditions are met, won’t comment on islandAirport. (Previously rejected the proposals for islandAirport and runway transitExpansion.)"
-								},
-								{
-										"name": "Property Taxes",
-										"support": false,
-										"policy": "Keep property tax increases 'within' the rate of inflation"
-								},
-								{
-										"name": "Red Tape",
-										"support": false,
-										"policy": "Outsource sports-field-permit process, which she says will make it easier to obtain permits; merge transportation-related departments into one new agency"
-								}
-						],
+						"events" : {
+								"name": "Events",
+								"support": false,
+								"policy": "Pursue bid for 2026 World Cup along with cities in the northern U.S. such as Detroit and Chicago"
+						},
+						"rankedBallots" : {
+								"name": "Ranked Ballots",
+								"support": false,
+								"policy": "Support the use of rankedBallots in municipal elections"
+						},
+						"transitExpansion" : {
+								"name": "Transit Expansion",
+								"support": false,
+								"policy": "Build a downtown relief line subway. (Says part of the line can be funded through sale of Toronto Hydro; claims the line can be built without a tax increase.)"
+						},
+						"garbageCollection" : {
+								"name": "Garbage Collection",
+								"support": false,
+								"policy": "No position yet"
+						},
+						"privatization" : {
+								"name": "Privatization",
+								"support": false,
+								"policy": "Sell a majority stake in Toronto Hydro"
+						},
+						"landTransferTax" : {
+								"name": "Land Transfer Tax",
+								"support": false,
+								"policy": "Reduce the burden of the landTransferTax by raising the threshold levels at which the escalating rates apply"
+						},
+						"gardinerExpressway" : {
+								"name": "Gardiner Expressway",
+								"support": false,
+								"policy": "Pursue 'hybrid' proposal to reconfigure the eastern gardinerExpressway Expressway rather than tear it down or preserve the existing expressway"
+						},
+						"officials" : {
+								"name": "City Officials",
+								"support": false,
+								"policy": "Appoint a single 'czar' to oversee transportation issues"
+						},
+						"transparency" : {
+								"name": "Transparency",
+								"support": false,
+								"policy": "No proposals yet"
+						},
+						"children" : {
+								"name": "Children",
+								"support": false,
+								"policy": "No proposals yet"
+						},
+						"scarborough" : {
+								"name": "Scarborough Subway",
+								"support": false,
+								"policy": "Build the council-approved and fully funded three-stop subway extension to the scarborough RT"
+						},
+						"pride" : {
+								"name": "Pride",
+								"support": false,
+								"policy": "Attend the pride parade"
+						},
+						"islandAirport" : {
+								"name": "Island Airport",
+								"support": false,
+								"policy": "Support the island airport transitExpansion if certain conditions are met, won’t comment on islandAirport. (Previously rejected the proposals for islandAirport and runway transitExpansion.)"
+						},
+						"propertyTax" : {
+								"name": "Property Taxes",
+								"support": false,
+								"policy": "Keep property tax increases 'within' the rate of inflation"
+						},
+						"redTape" : {
+								"name": "Red Tape",
+								"support": false,
+								"policy": "Outsource sports-field-permit process, which she says will make it easier to obtain permits; merge transportation-related departments into one new agency"
+						},
 						"image": "http://torontomayoralcandidate.s3.amazonaws.com/profiles/karenstintz.jpg",
 						"url": "http://torontomayor.digbymarksit.com/candidates/4/",
 						"profession": "Civil Servant, City Councillor",
@@ -356,83 +348,81 @@
 						"lastName": "Tory",
 						"birthDate": "1954-05-28",
 						"politicalAffiliation": "Progressive Conservation Party of Ontario",
-						"views": [
-								{
-										"name": "Events",
-										"support": false,
-										"policy": "No proposals yet"
-								},
-								{
-										"name": "Ranked Ballots",
-										"support": false,
-										"policy": "No position yet"
-								},
-								{
-										"name": "Transit Expansion",
-										"support": false,
-										"policy": "Build a downtown relief line subway, which he calls the 'Yonge St. relief line.' (Has not explained funding plan.)"
-								},
-								{
-										"name": "Garbage Collection",
-										"support": false,
-										"policy": "Outsource garbageCollection east of Yonge St."
-								},
-								{
-										"name": "Privatization",
-										"support": false,
-										"policy": "Says he is wary of 'fire sales,' and views Hydro sale in that category; no other position/proposals yet"
-								},
-								{
-										"name": "Land Transfer Tax",
-										"support": false,
-										"policy": "No position yet"
-								},
-								{
-										"name": "Gardiner Expressway",
-										"support": false,
-										"policy": "No specific position yet, but would not support any option that makes commute times longer"
-								},
-								{
-										"name": "City Officials",
-										"support": false,
-										"policy": "Rejects idea of transportation czar, no proposals yet"
-								},
-								{
-										"name": "Transparency",
-										"support": false,
-										"policy": "Make schedule public, hold media availabilities at least weekly"
-								},
-								{
-										"name": "Children",
-										"support": false,
-										"policy": "No proposals yet"
-								},
-								{
-										"name": "Scarborough Subway",
-										"support": false,
-										"policy": "Build the council-approved and fully funded three-stop subway extension to the scarborough RT"
-								},
-								{
-										"name": "Pride",
-										"support": false,
-										"policy": "Attend the pride parade"
-								},
-								{
-										"name": "Island Airport",
-										"support": false,
-										"policy": "Opposed immediate decision on Porter Airlines proposal for islandAirport and an expanded runway at the island airport; says dozens of key questions remain unanswered"
-								},
-								{
-										"name": "Property Taxes",
-										"support": false,
-										"policy": "Keep propertyTax increases at or below the rate of inflation"
-								},
-								{
-										"name": "Red Tape",
-										"support": false,
-										"policy": "No proposals yet"
-								}
-						],
+						"events" : {
+								"name": "Events",
+								"support": false,
+								"policy": "No proposals yet"
+						},
+						"rankedBallots" : {
+								"name": "Ranked Ballots",
+								"support": false,
+								"policy": "No position yet"
+						},
+						"transitExpansion" : {
+								"name": "Transit Expansion",
+								"support": false,
+								"policy": "Build a downtown relief line subway, which he calls the 'Yonge St. relief line.' (Has not explained funding plan.)"
+						},
+						"garbageCollection" : {
+								"name": "Garbage Collection",
+								"support": false,
+								"policy": "Outsource garbageCollection east of Yonge St."
+						},
+						"privatization" : {
+								"name": "Privatization",
+								"support": false,
+								"policy": "Says he is wary of 'fire sales,' and views Hydro sale in that category; no other position/proposals yet"
+						},
+						"landTransferTax" : {
+								"name": "Land Transfer Tax",
+								"support": false,
+								"policy": "No position yet"
+						},
+						"gardinerExpressway" : {
+								"name": "Gardiner Expressway",
+								"support": false,
+								"policy": "No specific position yet, but would not support any option that makes commute times longer"
+						},
+						"officials" : {
+								"name": "City Officials",
+								"support": false,
+								"policy": "Rejects idea of transportation czar, no proposals yet"
+						},
+						"transparency" : {
+								"name": "Transparency",
+								"support": false,
+								"policy": "Make schedule public, hold media availabilities at least weekly"
+						},
+						"children" : {
+								"name": "Children",
+								"support": false,
+								"policy": "No proposals yet"
+						},
+						"scarborough" : {
+								"name": "Scarborough Subway",
+								"support": false,
+								"policy": "Build the council-approved and fully funded three-stop subway extension to the scarborough RT"
+						},
+						"pride" : {
+								"name": "Pride",
+								"support": false,
+								"policy": "Attend the pride parade"
+						},
+						"islandAirport" : {
+								"name": "Island Airport",
+								"support": false,
+								"policy": "Opposed immediate decision on Porter Airlines proposal for islandAirport and an expanded runway at the island airport; says dozens of key questions remain unanswered"
+						},
+						"propertyTax" : {
+								"name": "Property Taxes",
+								"support": false,
+								"policy": "Keep propertyTax increases at or below the rate of inflation"
+						},
+						"redTape" : {
+								"name": "Red Tape",
+								"support": false,
+								"policy": "No proposals yet"
+						},
 						"image": "http://torontomayoralcandidate.s3.amazonaws.com/profiles/johntory.jpg",
 						"url": "http://torontomayor.digbymarksit.com/candidates/3/",
 						"profession": "Businessman, Lawyer, Lobbyist, Politician",
