@@ -1,6 +1,6 @@
 'use strict';
 
-var candidateApp = angular.module('candidateApp', ['chieffancypants.loadingBar']);
+var candidateApp = angular.module('candidateApp', ['ngAnimate', 'fx.animations', 'chieffancypants.loadingBar']);
 
 candidateApp.factory('candidateFactory', function($http) {
 	return {

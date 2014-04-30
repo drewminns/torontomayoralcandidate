@@ -19,7 +19,10 @@ module.exports = function(grunt) {
 					'modernizr/modernizr.js': 'modernizr/modernizr.js',
 					'angular/angular.min.js': 'angular/angular.min.js',
 					'angular-route/angular-route.min.js': 'angular-route/angular-route.min.js',
-					'angular-loading-bar/loading-bar.js': 'angular-loading-bar/src/loading-bar.js'
+					'angular-loading-bar/loading-bar.js': 'angular-loading-bar/src/loading-bar.js',
+					'angular-animate/angular-animate.min.js': 'angular-animate/angular-animate.min.js',
+					'ng-fx/ng-fx.min.js': 'ng-Fx/dist/ng-Fx.min.js',
+					'gsap/tweenmax.min.js': 'gsap/src/minified/TweenMax.min.js'
 				}
 			}
 		},

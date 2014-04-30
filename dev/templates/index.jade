@@ -9,20 +9,21 @@ html(lang='en', ng-app='candidateApp')
 
 		#content
 			include includes/filters
+			h2 {{filtered.length}} Candidates share your views
 
 			#candidates
 				.candidates
-					.tile(ng-repeat='candidate in candidates | filter:search')
-							//- img(src="{{candidate.image}}")
+					.tile(ng-repeat='candidate in filtered = (candidates | filter:search)')
+							img(src="{{candidate.image}}")
 							.name
 								h3 {{candidate.firstName}} {{candidate.lastName}}
 							.info
 								h4 Birthdate:
-								p {{candidate.birthDate}}
+									{{candidate.birthDate}}
 								h4 Political Affiliation:
-								p {{candidate.politicalAffiliation}}
+									{{candidate.politicalAffiliation}}
 								h4 Profession:
-								p {{candidate.profession}}
+									{{candidate.profession}}
 								a(href="{{candidate.website}}") {{candidate.website}}
 								h2 Political Views
 								include includes/views

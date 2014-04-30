@@ -32,13 +32,14 @@ $basefontsize: 16px;
 $baselineheight: 1.5;
 $cap-height: 		0.68;
 $basefontcolour: #333;
-$basefontfamily: 'quicksandregular', "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-$headingsfontfamily: 'quicksandbold', "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+$basefontfamily: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$headingsfontfamily: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 $linkcolour: #0074D9;
 
 body {
 	color: #333;
 	font-size: $basefontsize;
+  font-weight: 300;
 	font-family: $basefontfamily;
 }
 
