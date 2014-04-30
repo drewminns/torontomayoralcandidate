@@ -71,7 +71,8 @@ module.exports = function(grunt) {
 					style: 'expanded'
 				},
 				files: {                         // Dictionary of files
-					'dist/css/main.css': stylesheetsDir + 'main.scss'       // 'destination': 'source'
+					'dist/css/main.css': stylesheetsDir + 'main.scss',       // 'destination': 'source'
+					'dist/css/loadingbar.css': stylesheetsDir + 'loadingbar.scss'       // 'destination': 'source'
 				}
 			}
 		},
@@ -88,17 +89,17 @@ module.exports = function(grunt) {
 				browsers: ['last 5 version', 'ie 7', 'ie 8', 'ie 9']
 			},
 			no_dest: {
-				src: 'dist/css/main.css' // globbing is also possible here
+				src: 'dist/css/main.css'
 			}
 		},
 		uncss: {
 			dist: {
 				files: {
-					'dist/css/main.css': ['dist/index.html']
+					'dist/css/main.css' : ['dist/index.html']
 				}
 			},
 			options: {
-				ignore: ['#ignoredselector', '.ignoredselector']
+				ignore: ['#loading-bar*']
 			}
 		},
 		watch: {
