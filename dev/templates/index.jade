@@ -10,11 +10,11 @@ html(lang='en', ng-app='candidateApp')
 		#content
 			#filters
 				h2 What's important to you?
-
+				input(type="text", ng-model="search")
 
 			#candidates
-				.candidates(masonry='{ "transitionDuration" : "0.4s" , "itemSelector" : ".tile"}')
-					.tile(ng-repeat='candidate in candidates | searchFilter: Filter.views[0].Events[0].support', masonry-tile )
+				.candidates
+					.tile(ng-repeat='candidate in candidates | filter:search')
 							img(src="{{candidate.image}}")
 							.name
 								h3 {{candidate.firstName}} {{candidate.lastName}}
@@ -27,12 +27,14 @@ html(lang='en', ng-app='candidateApp')
 								p {{candidate.profession}}
 								a(href="{{candidate.website}}") {{candidate.website}}
 								h2 Political Views
-								ul.views(ng-repeat='item in candidate.views')
-									li(ng-repeat='(key, value) in item')
+								ul.views
+									li(ng-repeat='item in candidate.views')
 										dl.item
-											dd {{key}}
-											dd.policy(ng-repeat='each in value')
-												{{each.policy}}
-												.hello(ng-show='!each.support')
-													span.svg-checkmark
+											dd
+												{{item.name}}
+											dd
+												{{item.policy}}
+											dd(ng-show='item.support')
+												span.svg-checkmark
+
 
