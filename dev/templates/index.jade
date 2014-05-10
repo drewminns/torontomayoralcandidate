@@ -12,22 +12,25 @@ html(lang='en', ng-app='candidateApp')
 			#contextcontent What's Important to you?
 			#filterlist
 				include includes/filters
+			#details
+				p so like, what is this?
 
 		section#candidates
-			h2 {{filtered.length}} Candidates share your views
+			header.topinfo
+				h3 {{filtered.length}} Candidates share your views
 			.candidates
-				.tile(ng-repeat='candidate in filtered = (candidates | filter:search)', class='fx-fade-left-big fx-speed-500')
-						.name
-							img(src="{{candidate.image}}", data-adaptive-background="1")
-							h3 {{candidate.firstName}} {{candidate.lastName}}
-							h4 Birthdate:
-								{{candidate.birthDate}}
-							h4 Political Affiliation:
-								{{candidate.politicalAffiliation}}
-							h4 Profession:
-								{{candidate.profession}}
-							a(href="{{candidate.website}}") {{candidate.website}}
+				.tile(ng-repeat='candidate in filtered = (candidates | filter:search)', class='fx-fade-right fx-speed-500')
 						.info
-							h2 Political Views
+							.display
+								img(src="{{candidate.image}}", data-adaptive-background="1")
+								h2.candidate-name {{candidate.firstName}} {{candidate.lastName}}
+							h4 Birthdate:
+							p {{candidate.birthDate}}
+							h4 Political Affiliation:
+							p {{candidate.politicalAffiliation}}
+							h4 Profession:
+							p {{candidate.profession}}
+							.link
+								a(href="{{candidate.website}}") {{candidate.website}}
+						.campaign
 							include includes/views
-

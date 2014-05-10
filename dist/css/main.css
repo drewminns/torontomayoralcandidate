@@ -156,11 +156,16 @@ aside.filters #contextcontent {
   border-bottom: 1px solid #2f4050;
 }
 aside.filters #filterlist {
-  height: 450px;
+  height: 420px;
   overflow: scroll;
   width: 100%;
   padding: 15px 20px;
   border-bottom: 1px solid #2f4050;
+}
+aside.filters #details {
+  padding: 10px;
+  text-align: center;
+  color: #34495e;
 }
 
 section#candidates {
@@ -169,26 +174,55 @@ section#candidates {
   float: left;
   width: 75%;
 }
+section#candidates header.topinfo {
+  display: inline-block;
+  padding: 26px 0;
+  width: 75%;
+  background: #03182b;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+}
 section#candidates .candidates {
-  display: inline;
-  float: left;
-  width: 97.91667%;
-  margin: 0 1.04167%;
+  margin-top: 108px;
 }
 section#candidates .candidates .tile {
   display: inline;
   float: left;
   width: 97.91667%;
   margin: 0 1.04167%;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #dcdcdc;
 }
-section#candidates .candidates .tile .name {
+section#candidates .candidates .tile .info {
   display: inline;
   float: left;
   width: 31.25%;
   margin: 0 1.04167%;
 }
-section#candidates .candidates .tile .info {
+section#candidates .candidates .tile .info .display {
+  display: block;
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+section#candidates .candidates .tile .info .display h2.candidate-name {
+  background: rgba(52, 73, 94, 0.7);
+  color: #fff;
+  padding: 5px 10px;
+  position: absolute;
+  bottom: 0;
+}
+section#candidates .candidates .tile .info .link a {
+  display: inline-block;
+  margin-top: 10px;
+  background: #cf3638;
+  color: #fff;
+  padding: 10px;
+}
+section#candidates .candidates .tile .campaign {
   display: inline;
   float: left;
   width: 64.58333%;
@@ -201,7 +235,7 @@ ul.views li {
   width: 100%;
 }
 ul.views li:nth-child(odd) {
-  background: #ccc;
+  background: #dbdbdb;
 }
 ul.views li dl.item {
   font-size: 12px;
@@ -222,6 +256,7 @@ ul.views li dl.item dd:last-child {
 .svg-checkmark svg {
   width: 25px;
   height: 25px;
+  fill: #2ecc71;
 }
 
 .view {

@@ -149,11 +149,16 @@ aside.filters {
 		border-bottom: 1px solid #2f4050;
 	}
 	#filterlist {
-		height: 450px;
+		height: 420px;
 		overflow: scroll;
 		width: 100%;
 		padding: 15px 20px;
 		border-bottom: 1px solid #2f4050;
+	}
+	#details {
+		padding: 10px;
+		text-align: center;
+		color: #34495e;
 	}
 }
 
@@ -164,15 +169,48 @@ section#candidates{
 	left: 25%;
 	float: left;
 	width:75%;
+	header.topinfo {
+		display: inline-block;
+		padding: 26px 0;
+		width: 75%;
+		background: #03182b;
+		color: #fff;
+		text-align: center;
+		position:fixed;
+		z-index:999;
+	}
 	.candidates {
-		@include column(12);
+		margin-top: 108px;
 		.tile {
 			@include column(12);
-			margin-bottom: 25px;
-			.name {
-				@include column(4);
-			}
+			margin-bottom: 50px;
+			padding-bottom: 50px;
+			border-bottom: 1px solid #dcdcdc;
 			.info {
+				@include column(4);
+				.display {
+					display: block;
+					width: 300px;
+					height: 300px;
+					position: relative;
+					h2.candidate-name {
+						background: rgba( #34495e, 0.7);
+						color: #fff;
+						padding: 5px 10px;
+						position: absolute;
+						bottom: 0;
+					}
+				}
+				.link a {
+					display: inline-block;
+					margin-top: 10px;
+					background: #cf3638;
+					color: #fff;
+					padding: 10px;
+				}
+
+			}
+			.campaign {
 				@include column(8);
 			}
 		}
@@ -184,7 +222,7 @@ ul.views li {
 	padding: 10px 5px;
 	width: 100%;
 	&:nth-child(odd) {
-		background: #ccc;
+		background: #dbdbdb;
 	}
 	dl.item {
 		@include fontbase(12px);
@@ -202,9 +240,12 @@ ul.views li {
 }
 
 
-.svg-checkmark svg {
-  width: 25px;
-  height: 25px;
+.svg-checkmark {
+	svg {
+	  width: 25px;
+	  height: 25px;
+	  fill: #2ecc71;
+	}
 }
 
 .view {
