@@ -4,27 +4,29 @@ html(lang='en', ng-app='candidateApp')
 		include includes/header
 	body(ng-controller='candidateCtrl')
 
-		header#top
-			h3 Toronto Mayoral Candidate Helper
+		aside.filters
+			.title
+				h3 Toronto 2014
+			#filters
+				span.svg-toronto
+			#filterlist
+				include includes/filters
 
-		#content
-			include includes/filters
+		section#candidates
 			h2 {{filtered.length}} Candidates share your views
-
-			#candidates
-				.candidates
-					.tile(ng-repeat='candidate in filtered = (candidates | filter:search)')
-							img(src="{{candidate.image}}")
-							.name
-								h3 {{candidate.firstName}} {{candidate.lastName}}
-							.info
-								h4 Birthdate:
-									{{candidate.birthDate}}
-								h4 Political Affiliation:
-									{{candidate.politicalAffiliation}}
-								h4 Profession:
-									{{candidate.profession}}
-								a(href="{{candidate.website}}") {{candidate.website}}
-								h2 Political Views
-								include includes/views
+			.candidates
+				.tile(ng-repeat='candidate in filtered = (candidates | filter:search)', class='fx-fade-left-big fx-speed-500')
+						.name
+							img(src="{{candidate.image}}", data-adaptive-background="1")
+							h3 {{candidate.firstName}} {{candidate.lastName}}
+							h4 Birthdate:
+								{{candidate.birthDate}}
+							h4 Political Affiliation:
+								{{candidate.politicalAffiliation}}
+							h4 Profession:
+								{{candidate.profession}}
+							a(href="{{candidate.website}}") {{candidate.website}}
+						.info
+							h2 Political Views
+							include includes/views
 

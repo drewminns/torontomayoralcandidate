@@ -347,12 +347,6 @@
 	font-size: $fontsize;
 	font-size: calculateRem($fontsize);
 	line-height: $lineheight * 1em;
-	$baseline-distance: ($lineheight - $cap-height) / 2;
-	// METHOD 1
-	/////////////////
-	// this method can relatively move down elements you may not want to
-	position: relative;
-	top: $baseline-distance + em;
 }
 
 

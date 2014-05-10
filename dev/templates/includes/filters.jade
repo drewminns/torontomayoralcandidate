@@ -1,32 +1,45 @@
-#filters
-	h2 What's important to you?
-	label Events
-		input(type="checkbox", ng-model="search.events", ng-true-value="true", ng-false-value="")
-	label Ranked Ballots
-		input(type="checkbox", ng-model="search.rankedBallots", ng-true-value="true", ng-false-value="")
-	label Transit Expansion
-		input(type="checkbox", ng-model="search.transitExpansion", ng-true-value="true", ng-false-value="")
-	label Garbage Collection
-		input(type="checkbox", ng-model="search.garbageCollection", ng-true-value="true", ng-false-value="")
-	label Privatization
-		input(type="checkbox", ng-model="search.privatization", ng-true-value="true", ng-false-value="")
-	label Land Transfer Tax
-		input(type="checkbox", ng-model="search.landTransferTax", ng-true-value="true", ng-false-value="")
-	label Gardiner Expressway
-		input(type="checkbox", ng-model="search.gardinerExpressway", ng-true-value="true", ng-false-value="")
-	label Officials
-		input(type="checkbox", ng-model="search.officials", ng-true-value="true", ng-false-value="")
-	label Transparency
-		input(type="checkbox", ng-model="search.transparency", ng-true-value="true", ng-false-value="")
-	label Children
-		input(type="checkbox", ng-model="search.children", ng-true-value="true", ng-false-value="")
-	label Scarborough
-		input(type="checkbox", ng-model="search.scarborough", ng-true-value="true", ng-false-value="")
-	label Pride
-		input(type="checkbox", ng-model="search.pride", ng-true-value="true", ng-false-value="")
-	label Island Airport Expansion
-		input(type="checkbox", ng-model="search.islandAirport", ng-true-value="true", ng-false-value="")
-	label Property Tax
-		input(type="checkbox", ng-model="search.propertyTax", ng-true-value="true", ng-false-value="")
-	label Red Tape
-		input(type="checkbox", ng-model="search.redTape", ng-true-value="true", ng-false-value="")
+.view
+	input(type="checkbox", id="events", ng-model="search.events", ng-true-value="true", ng-false-value="")
+	label(for="events") Events
+.view
+	input(type="checkbox", id="ballots", ng-model="search.rankedBallots", ng-true-value="true", ng-false-value="")
+	label(for="ballots") Ranked Ballots
+.view
+	input(type="checkbox", id="transit", ng-model="search.transitExpansion", ng-true-value="true", ng-false-value="")
+	label(for="transit") Transit Expansion
+.view
+	input(type="checkbox", id="garbage", ng-model="search.garbageCollection", ng-true-value="true", ng-false-value="")
+	label(for="garbage") Garbage Collection
+.view
+	input(type="checkbox", id="privatization", ng-model="search.privatization", ng-true-value="true", ng-false-value="")
+	label(for="privatization") Privatization
+.view
+	input(type="checkbox", id="landTransferTax", ng-model="search.landTransferTax", ng-true-value="true", ng-false-value="")
+	label(for="landTransferTax") Land Transfer Tax
+.view
+	input(type="checkbox", id="gardinerExpressway", ng-model="search.gardinerExpressway", ng-true-value="true", ng-false-value="")
+	label(for="gardinerExpressway") Gardiner Expressway
+.view
+	input(type="checkbox", id="officials", ng-model="search.officials", ng-true-value="true", ng-false-value="")
+	label(for="officials") Officials
+.view
+	input(type="checkbox", id="transparency", ng-model="search.transparency", ng-true-value="true", ng-false-value="")
+	label(for="transparency") Transparency
+.view
+	input(type="checkbox", id="children", ng-model="search.children", ng-true-value="true", ng-false-value="")
+	label(for="children") Children
+.view
+	input(type="checkbox", id="scarborough", ng-model="search.scarborough", ng-true-value="true", ng-false-value="")
+	label(for="scarborough") Scarborough
+.view
+	input(type="checkbox", id="pride", ng-model="search.pride", ng-true-value="true", ng-false-value="")
+	label(for="pride") Pride
+.view
+	input(type="checkbox", id="islandAirport", ng-model="search.islandAirport", ng-true-value="true", ng-false-value="")
+	label(for="islandAirport") Island Airport Expansion
+.view
+	input(type="checkbox", id="propertyTax", ng-model="search.propertyTax", ng-true-value="true", ng-false-value="")
+	label(for="propertyTax") Property Tax
+.view
+	input(type="checkbox", id="redTape", ng-model="search.redTape", ng-true-value="true", ng-false-value="")
+	label(for="redTape") Red Tape

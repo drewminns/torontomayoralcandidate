@@ -1,9 +1,9 @@
 *,
 *:before,
 *:after {
+	box-sizing: border-box;
 	-moz-border-box: box-sizing;
 	-webkit-border-box: box-sizing;
-	box-sizing: border-box;
 }
 
 @import '_mixins';
@@ -21,25 +21,24 @@ $total-width: 100%;
 /* ---------------------------
 Fonts are located in dist/css/fonts bro
 ------------------------------ */
-@include importfont('quicksandbold', 'fonts/quicksand-bold-webfont', 700);
-@include importfont('quicksandregular', 'fonts/quicksand-regular-webfont', 400);
-@include importfont('quicksandlight', 'fonts/quicksand-light-webfont', 300);
+@include importfont('Montserrat Regular', 'fonts/Montserrat-Regular', 400);
+@include importfont('Quicksand Bold', 'fonts/Quicksand-Bold', 700);
 
 // **********************
 // Set Variables Here
 //***********************
-$basefontsize: 16px;
+$basefontsize: 12px;
 $baselineheight: 1.5;
 $cap-height: 		0.68;
 $basefontcolour: #333;
-$basefontfamily: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-$headingsfontfamily: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$basefontfamily: "Montserrat Regular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$headingsfontfamily: "Quicksand Bold", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 $linkcolour: #0074D9;
 
 body {
 	color: #333;
-	font-size: $basefontsize;
   font-weight: 300;
+	font-size: $basefontsize;
 	font-family: $basefontfamily;
 }
 
@@ -51,40 +50,41 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: $headingsfontfamily;
-	text-rendering: optimizelegibility; // Fix the character spacing for headings
-	font-weight: 700;
 	margin: 0;
 	padding: 0;
+	text-transform: uppercase;
+  font-weight: 100;
+	font-family: $headingsfontfamily;
+	text-rendering: optimizelegibility; // Fix the character spacing for headings
 	a {
 		color: $basefontcolour;
 	}
 }
 
 h1 {
-	@include fontbase(32px);
-}
-
-h2 {
 	@include fontbase(28px);
 }
 
-h3 {
+h2 {
 	@include fontbase(24px);
 }
 
-h4 {
+h3 {
 	@include fontbase(21px);
 }
 
-h5 {
+h4 {
 	@include fontbase(18px);
+}
+
+h5 {
+	@include fontbase(16px);
 }
 
 // General Typography
 // -------------------------
 p {
-	@include fontbase(16px);
+	@include fontbase(12px);
 }
 
 a {
@@ -97,8 +97,8 @@ a {
 
 // Unordered and Ordered lists
 ul, ol {
-	padding: 0;
 	margin: 0;
+	padding: 0;
 }
 
 ul ul,
@@ -111,20 +111,136 @@ ol ul {
 // **********************
 // All Styles Go Below Here Bud
 //***********************
-.container {
-	margin: 0 auto;
-	max-width: 1080px;
+
+
+aside.filters {
+	display: block;
+	float: left;
+	width: 25%;
+	.title {
+		display: inline-block;
+		float: left;
+		padding: 25px 0;
+		width: 100%;
+		background: #cf3638;
+		color: #fff;
+		text-align: center;
+	}
+	#filters {
+		float:left;
+		width: 100%;
+		background: #0a1f32;
+		color: #cccfd4;
+		padding: 50px 0px;
+		text-align: center;
+		h2 {
+			text-transform: uppercase;
+		}
+	}
+	#filterlist {
+		float:left;
+		width: 100%;
+		background: #03182b;
+	}
 }
 
-#wrapper {
-	padding: 25px;
-	margin: 25px 0px;
-	width: 100%;
+
+
+section#candidates{
+	float: left;
+	width:75%;
+	.candidates {
+		@include column(12);
+		.tile {
+			@include column(12);
+			margin-bottom: 25px;
+			.name {
+				@include column(4);
+			}
+			.info {
+				@include column(8);
+			}
+		}
+	}
 }
+
+ul.views li {
+	float: left;
+	padding: 10px 5px;
+	width: 100%;
+	&:nth-child(odd) {
+		background: #ccc;
+	}
+	dl.item {
+		@include fontbase(12px);
+		width: 100%;
+		dd {
+			float: left;
+			&:first-child {
+				width: 30%;
+			}
+			&:last-child {
+				width: 70%;
+			}
+		}
+	}
+}
+
 
 .svg-checkmark svg {
   width: 25px;
-  height: 24px;
+  height: 25px;
+}
+
+.view {
+	padding: 12px 0;
+	width: 100%;
+	border-bottom: 1px solid #56C4C3;
+	/* Base for label styling */
+	[type="checkbox"]:not(:checked),
+	[type="checkbox"]:checked {
+	  position: absolute;
+	  left: -9999px;
+	}
+	[type="checkbox"]:not(:checked) + label,
+	[type="checkbox"]:checked + label {
+	  position: relative;
+	  padding: 10px 10px 10px 30px;
+	  cursor: pointer;
+	}
+
+	/* checkbox aspect */
+	[type="checkbox"]:not(:checked) + label:before,
+	[type="checkbox"]:checked + label:before {
+	  position: absolute; top: 10px;
+	  left:5px;
+	  width: 18px; height: 18px;
+	  border: 1px solid #aaa;
+	  border-radius: 3px;
+	  box-shadow: inset 0 1px 3px rgba(0,0,0,.3);
+	  content: '';
+	}
+	/* checked mark aspect */
+	[type="checkbox"]:not(:checked) + label:after,
+	[type="checkbox"]:checked + label:after {
+	  position: absolute; top: 10px;
+	  left:6px;
+	  clear: both;
+	  color: #09ad7e;
+	  content: '✔';
+	  font-size: 12px;
+	  transition: all .2s;
+	}
+
+	/* checked mark aspect changes */
+	[type="checkbox"]:not(:checked) + label:after {
+	  opacity: 0;
+	  transform: scale(0);
+	}
+	[type="checkbox"]:checked + label:after {
+	  opacity: 1;
+	  transform: scale(1);
+	}
 }
 
 
