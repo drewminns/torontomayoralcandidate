@@ -40,6 +40,7 @@ body {
   font-weight: 300;
 	font-size: $basefontsize;
 	font-family: $basefontfamily;
+	height: 100%;
 }
 
 // Headings
@@ -117,9 +118,11 @@ aside.filters {
 	display: block;
 	float: left;
 	width: 25%;
+	position: fixed;
+	height: 100%;
+	background: #03182b;
 	.title {
 		display: inline-block;
-		float: left;
 		padding: 25px 0;
 		width: 100%;
 		background: #cf3638;
@@ -127,26 +130,38 @@ aside.filters {
 		text-align: center;
 	}
 	#filters {
-		float:left;
 		width: 100%;
-		background: #0a1f32;
 		color: #cccfd4;
-		padding: 50px 0px;
 		text-align: center;
-		h2 {
-			text-transform: uppercase;
+		padding: 10px;
+		.svg-toronto svg{
+			fill: #172a3b;
+			width: 138px;
+			height: 158px;
 		}
 	}
+	#contextcontent {
+		background: #0a1f32;
+		padding: 20px 0;
+		text-align: center;
+		color: #fff;
+		text-transform: uppercase;
+		border-bottom: 1px solid #2f4050;
+	}
 	#filterlist {
-		float:left;
+		height: 450px;
+		overflow: scroll;
 		width: 100%;
-		background: #03182b;
+		padding: 15px 20px;
+		border-bottom: 1px solid #2f4050;
 	}
 }
 
 
 
 section#candidates{
+	position: relative;
+	left: 25%;
 	float: left;
 	width:75%;
 	.candidates {
@@ -193,9 +208,10 @@ ul.views li {
 }
 
 .view {
-	padding: 12px 0;
+	padding: 15px 0;
 	width: 100%;
-	border-bottom: 1px solid #56C4C3;
+	color: #fff;
+	border-bottom: 1px solid rgba(#2f4050, 0.5);
 	/* Base for label styling */
 	[type="checkbox"]:not(:checked),
 	[type="checkbox"]:checked {
@@ -205,16 +221,16 @@ ul.views li {
 	[type="checkbox"]:not(:checked) + label,
 	[type="checkbox"]:checked + label {
 	  position: relative;
-	  padding: 10px 10px 10px 30px;
+	  padding: 10px 10px 10px 50px;
 	  cursor: pointer;
 	}
 
 	/* checkbox aspect */
 	[type="checkbox"]:not(:checked) + label:before,
 	[type="checkbox"]:checked + label:before {
-	  position: absolute; top: 10px;
+	  position: absolute; top: 5px;
 	  left:5px;
-	  width: 18px; height: 18px;
+	  width: 25px; height: 25px;
 	  border: 1px solid #aaa;
 	  border-radius: 3px;
 	  box-shadow: inset 0 1px 3px rgba(0,0,0,.3);
@@ -223,12 +239,12 @@ ul.views li {
 	/* checked mark aspect */
 	[type="checkbox"]:not(:checked) + label:after,
 	[type="checkbox"]:checked + label:after {
-	  position: absolute; top: 10px;
-	  left:6px;
+	  position: absolute; top: 7px;
+	  left:9px;
 	  clear: both;
 	  color: #09ad7e;
 	  content: '✔';
-	  font-size: 12px;
+	  font-size: 21px;
 	  transition: all .2s;
 	}
 
