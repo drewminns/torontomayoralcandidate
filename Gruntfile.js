@@ -22,7 +22,8 @@ module.exports = function(grunt) {
 					'angular-loading-bar/loading-bar.js': 'angular-loading-bar/src/loading-bar.js',
 					'angular-animate/angular-animate.min.js': 'angular-animate/angular-animate.min.js',
 					'ng-fx/ng-fx.min.js': 'ng-Fx/dist/ng-Fx.min.js',
-					'gsap/tweenmax.min.js': 'gsap/src/minified/TweenMax.min.js'
+					'gsap/tweenmax.min.js': 'gsap/src/minified/TweenMax.min.js',
+					'angular-modal/modal.min.js': 'angular-modal/modal.min.js'
 				}
 			}
 		},
@@ -139,5 +140,5 @@ module.exports = function(grunt) {
 	// Run the server and watch for file changes
 	grunt.registerTask('default', ['jade', 'connect',  'concat', 'uglify', 'sass', 'watch']); // Build Tasks
 	grunt.registerTask('clean', ['uncss', 'autoprefixer', ]); // Deploy build tasks
-	grunt.registerTask('inject', ['bowercopy','svginject']); // Inject Bower and SVG tools
+	grunt.registerTask('inject', ['bowercopy']); // Inject Bower and SVG tools
 };

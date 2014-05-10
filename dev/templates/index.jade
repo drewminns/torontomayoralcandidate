@@ -4,6 +4,14 @@ html(lang='en', ng-app='candidateApp')
 		include includes/header
 	body(ng-controller='candidateCtrl')
 
+		modal-dialog(show='modalShown')
+			header.intro
+				h1 Who shares your views?
+			section.intro-content
+				p On October 27th, 2014, Toronto will choose a new mayor to represent itself to the world.
+				p As residents of this great city, we recognize that what makes us great, is something that should be reflected in our leaders.
+				p This site will enable you to select what values are important to you and view what candidates have released campaign promises that are aligned with what you care about.
+				p In no way, is this affiliated with any candidate or political party. This is simply a tool to help you make an informed decision on election day.
 		aside.filters
 			.title
 				h3 Toronto 2014
@@ -13,7 +21,10 @@ html(lang='en', ng-app='candidateApp')
 			#filterlist
 				include includes/filters
 			#details
-				p so like, what is this?
+				p.info-click(ng-click='toggleModal()') so like, what is this?
+				p
+					| made by
+					a(href="http://twitter.com/drewisthe", target="_blank")  drewminns
 
 		section#candidates
 			header.topinfo
