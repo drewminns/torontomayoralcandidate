@@ -149,6 +149,7 @@ aside.filters {
 		text-transform: uppercase;
 	}
 	#filterlist {
+		box-sizing: border-box;
 		overflow: scroll;
 		padding: 15px 20px;
 		width: 100%;
@@ -181,6 +182,7 @@ section#candidates{
 		display: inline-block;
 		padding: 26px 0;
 		width: 75%;
+		left: 25%;
 		background: #03182b;
 		color: #fff;
 		text-align: center;

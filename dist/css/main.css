@@ -156,6 +156,9 @@ aside.filters #contextcontent {
   text-transform: uppercase;
 }
 aside.filters #filterlist {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   overflow: scroll;
   padding: 15px 20px;
   width: 100%;
@@ -186,6 +189,7 @@ section#candidates header.topinfo {
   display: inline-block;
   padding: 26px 0;
   width: 75%;
+  left: 25%;
   background: #03182b;
   color: #fff;
   text-align: center;
