@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizelegibility;
 }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-  color: #333333;
+  color: #333;
 }
 
 h1 {
@@ -100,7 +100,7 @@ p {
 }
 
 a {
-  color: #0074d9;
+  color: #0074D9;
   text-decoration: none;
 }
 
@@ -374,3 +374,5 @@ ul.views li dl.item dd:last-child {
   background: #2ecc71;
   margin-bottom: 25px;
 }
+
+/*# sourceMappingURL=main.css.map */
